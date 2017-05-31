@@ -1,18 +1,15 @@
 package org.smart4j.chapter1.Helper;
 
-import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.apache.commons.dbutils.handlers.BeanMapHandler;
 import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smart4j.chapter1.Util.ProsUtil;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.*;
 
@@ -31,7 +28,7 @@ public class DatabaseHelper {
     private static final String USERNAME;
     private static final String PASSWORD;
     static {
-        Properties props = ProsUtil.loadProps("config.properties");
+        Properties props = ProsUtil.loadProps("smart.properties");
         DRIVER = props.getProperty("jdbc.driver");
         URL = props.getProperty("jdbc.url");
         USERNAME = props.getProperty("jdbc.username");

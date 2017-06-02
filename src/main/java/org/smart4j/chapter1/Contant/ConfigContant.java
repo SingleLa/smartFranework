@@ -15,4 +15,6 @@ public class ConfigContant {
     public static final String APP_BASE_PACKAGE = "smart.framework.app.base_package";
     public static final String APP_JSP_PATH = "smart.framework.app.jsp_patch";
     public static final String APP_ASSET_PATH = "smart.framework.app.asset_path";
+
+    public static final String UTF_8 = "UTF-8";
 }

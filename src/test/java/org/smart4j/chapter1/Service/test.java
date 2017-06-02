@@ -1,6 +1,7 @@
 package org.smart4j.chapter1.Service;
 
 import org.junit.Test;
+import org.smart4j.chapter1.Annotation.Inject;
 import org.smart4j.chapter1.Helper.ConfigHelper;
 import org.smart4j.chapter1.Model.Customer;
 import org.smart4j.chapter1.Util.ClassUtil;
@@ -14,15 +15,12 @@ import java.util.Set;
  * Created by Administrator on 2017/5/31.
  */
 public class test {
-    private  final  CustomerService customerService;
-
-    public test(){
-        customerService = new CustomerService();
-    }
+    @Inject
+    private CustomerService customerService;
     @Test
     public void test1(){
-        Set<Class<?>> classSet = ClassUtil.getClassSet(ConfigHelper.getAppBasePackage());
-        System.out.print(classSet);
+        List<Customer> list = customerService.getCustomerList();
+        System.out.print(list);
 
     }
 }

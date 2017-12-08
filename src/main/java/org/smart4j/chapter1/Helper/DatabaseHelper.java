@@ -40,7 +40,7 @@ public class DatabaseHelper {
         DATA_SOURCE.setDriverClassName(DRIVER);
         DATA_SOURCE.setUrl(URL);
         DATA_SOURCE.setUsername(USERNAME);
-        DATA_SOURCE.setPassword(PASSWORD);
+        DATA_SOURCE.setPassword(  PASSWORD);
 
     }
 

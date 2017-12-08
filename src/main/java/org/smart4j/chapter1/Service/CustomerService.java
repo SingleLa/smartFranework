@@ -37,7 +37,7 @@ public class CustomerService {
 
     public  boolean createCustomer(){
         Customer c = new Customer();
-        c.setContact("1111");
+        c.setContact("1111"  );
         c.setEmail("2222");
         c.setName("3333");
         c.setRemark("4444");
